@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "love_gifs",
+  "info": {
+    "name": "love gif"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gif": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "richtext",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "categories": {
+      "via": "gifs",
+      "collection": "category"
+    }
+  }
+}

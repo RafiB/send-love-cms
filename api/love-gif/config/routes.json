@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/love-gifs",
+      "handler": "love-gif.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/love-gifs/count",
+      "handler": "love-gif.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/love-gifs/:id",
+      "handler": "love-gif.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/love-gifs",
+      "handler": "love-gif.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/love-gifs/:id",
+      "handler": "love-gif.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/love-gifs/:id",
+      "handler": "love-gif.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
