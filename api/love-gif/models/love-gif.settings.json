@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "love_gifs",
   "info": {
-    "name": "love gif"
+    "name": "love gif",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,6 +34,9 @@
     "categories": {
       "via": "gifs",
       "collection": "category"
+    },
+    "namee": {
+      "type": "string"
     }
   }
 }

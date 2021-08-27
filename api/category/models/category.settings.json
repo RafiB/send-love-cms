@@ -17,8 +17,8 @@
       "unique": true
     },
     "gifs": {
-      "collection": "love-gif",
       "via": "categories",
+      "collection": "love-gif",
       "dominant": true
     }
   }
